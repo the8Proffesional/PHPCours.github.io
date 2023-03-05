@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Verticale Dropdown Menu</title>
+		<link rel="stylesheet" href="style.css">
+		
+			
+	</head>
+	<body>
+		<header>
+			<h1>PHP Cours</h1>
+			<p>Cours détaillé sur PHP réalisé pae ADIL ADRAIBI</p>
+		</header>
+		<div class="side-navbar">
+				<div class="btn">
+					<a href="index.html">Introduction</a>
+				</div>
+				<div  class="btn menu" >
+					<a onclick="alr(event)" href="#">Variables</a>
+					
+				</div>
+				<div class="submenu" style="display:block;" id="sub">
+						<div class="btn-submenu">
+							<a href="variables1.html">Bases et régles</a>
+						</div>
+						<div class="btn-submenu">
+							<a href="variables2.html">Types et transtypage</a>
+						</div>
+				</div>
+				<div class="btn">
+					<a href="#">Conditional</a>
+				</div>	
+		</div>
+		
+		<div class="content">
+			<h1>Variables-Bases et régles</h1>
+			<hr>
+			<div class="article">
+				<h4>Bases</h4>
+				<p>En PHP, les variables sont déclarées en utilisant le signe dollar( $ ) :</p>
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+						<span class="php">$a</span>=<span class="str">"Ma première variable"</span>;
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+				<h4>Des règles</h4>
+				<p>Il y a des règles à garder à l'esprit lors de la création de variables à l'intérieur de PHP. Nous allons tous les lister
+				et après cela, nous examinerons le code qui les affiche. Voici les règles de base :</p>
+				<ul>
+					<li>Les noms de variables commencent par une lettre ou un trait de soulignement.</li>
+					<li>Les noms de variables ne peuvent pas commencer par un nombre.</li>
+					<li>Un nom de variable peut avoir n'importe quel nombre de lettres, des traits de soulignement de chiffres.</li>
+					<li>Les lettres valides sont toutes les lettres hexadécimales ASCII de 00 à FF.</li>
+				</ul>
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<span class="php">$a</span>=<span class="str">'Cette variable'</span>; //valide
+					<br>
+					<span class="php">$_a</span>=42; //aussi valide
+					<br>
+					<span class="php">$123</span>=42; //Non valide
+					<br>
+					<span class="php">$äbc</span>=<span class="fun">array()</span>; //valide
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+			</div>
+			
+		</div>
+	<!--<script src="script.js"></script>-->
+	</body>
+	
+</html>

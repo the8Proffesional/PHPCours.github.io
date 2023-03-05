@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Verticale Dropdown Menu</title>
+		<link rel="stylesheet" href="style.css">
+		
+			
+	</head>
+	<body>
+		<header>
+			<h1>PHP Cours</h1>
+			<p>Cours détaillé sur PHP réalisé pae ADIL ADRAIBI</p>
+		</header>
+		<div class="side-navbar">
+				<div class="btn">
+					<a href="index.html">Introduction</a>
+				</div>
+				<div  class="btn menu" >
+					<a onclick="alr(event)" href="#">Variables</a>
+					
+				</div>
+				<div class="submenu" id="sub">
+						<div class="btn-submenu">
+							<a href="variables1.html">Bases et régles</a>
+						</div>
+						<div class="btn-submenu">
+							<a href="variables2.html">Types et transtypage</a>
+						</div>
+				</div>
+				<div class="btn">
+					<a href="#">Conditional</a>
+				</div>	
+		</div>
+		
+		<div class="content">
+			<h1>Introduction</h1>
+			<hr>
+			<div class="article">
+				<p>PHP signifie PHP : <b>Hypertext Preprocessor</b> (à l'origine, cela signifiait Personal Home Page)
+				et est l'un des langages de programmation web les plus utilisés (installé sur plus de 250 millions
+				sites Internet). Il est similaire à des langages tels que C.</p>
+				<h2>Mise en place de notre environnement de travail</h2>
+				<p>Pour commencer à travailler avec PHP sur votre ordinateur local, vous devez installer un programme de développement
+				environnement. Pourquoi cela est-il ainsi? PHP est un langage côté serveur ; donc essentiellement, vous devez installer un
+				"serveur local" sur votre ordinateur afin d'exécuter du code PHP. Il existe de nombreuses solutions offrant
+				packages PHP, mais la forme la plus courante est connue sous le nom de bundle LAMP. Il y a beaucoup de LAMPE
+				bundles là-bas qui s'adaptent à différents systèmes d'exploitation. Les plus courants sont :</p>
+				<ul>
+					<li style="color:red">XAMPP - une distribution Apache avec PHP, MySQL et Perl. Assistance disponible pour
+					Windows, Linux et Mac.</li>
+					<li style="color:red">WAMP - spécifique pour Windows</li>
+					<li style="color:red">MAMP - spécifique pour MAC</li>
+				</ul>
+				<p>Choisissez-en un, tapez le nom dans Google, suivez le lien de téléchargement et les instructions et vous serez prêt
+				aller.
+				En outre, vous aurez besoin d'une certaine forme d'éditeur de texte. Il existe de nombreux programmes gratuits et payants que vous pouvez
+				trouver. Celui que nous utilisons pour ce cours s'appelle Notepad++.</p>
+				<h2>Premier fichier PHP</h2>
+				<p>Executer LAMP et  commencer l'execution du serveur Apache et MySql...Naviguer à l'emplacement <em>C:\xampp\htdocs</em> et créer un dossier "website" placer dedans votre premier fichier PHP <em>index.php</em></p>
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<br>
+					<span class="fun">echo</span> <span class="str">"Hallow"</span>, <span class="str">"World!"</span>;<br>
+					<span class="fun">print</span> (<span class="str">'Welcome'</span>);
+					<br>
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+				<p>Pour ouvrir votre page tappez dans dans le navigatteur <em>http://localhost/website/index.php</em></p>
+			</div>
+		</div>
+	<script src="script.js"></script>
+	</body>
+	
+</html>

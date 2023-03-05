@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Verticale Dropdown Menu</title>
+		<link rel="stylesheet" href="style.css">
+		
+			
+	</head>
+	<body>
+		<header>
+			<h1>PHP Cours</h1>
+			<p>Cours détaillé sur PHP réalisé pae ADIL ADRAIBI</p>
+		</header>
+		<div class="side-navbar">
+				<div class="btn">
+					<a href="index.html">Introduction</a>
+				</div>
+				<div  class="btn menu" >
+					<a onclick="alr(event)" href="#">Variables</a>
+					
+				</div>
+				<div class="submenu" style="display:block;" id="sub">
+						<div class="btn-submenu">
+							<a href="variables1.html">Bases et régles</a>
+						</div>
+						<div class="btn-submenu">
+							<a href="variables2.html">Types et transtypage</a>
+						</div>
+				</div>
+				<div class="btn">
+					<a href="#">Conditional</a>
+				</div>	
+		</div>
+		
+		<div class="content">
+			<h1>Variables-Types et transtypage</h1>
+			<hr>
+			<div class="article">
+				<h4>Boolean</h4>
+				<p></p>
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<span class="php">$bool</span>=TRUE; //assigne la valeur Vrai à la variable $bool	
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+				<p>Les differentes valeures de type de variables qui prend la valeur <b>FALSE</b></p>
+				<ul>
+					<li>Le boolean FALSE</li>
+					<li>L'integer 0</li>
+					<li>Le float 0.0</li>
+					<li>Le string vide et '0'</li>
+					<li>Le tableau avec aucun element</li>
+					<li>Le type NULL</li>
+				</ul>
+				
+				<h4>Integer</h4>
+			
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<span class="php">$num1</span>=42; //cela est integer
+					<br>
+					<span class="php">$num2</span>=-42; //cela est aussi integer
+					<br>
+					<span class="php">$num3</span>=012; //cela est integer octal
+					<br>
+					<span class="php">$num4</span>=0x18; //cela est integer hexadecimal
+					<br>
+					<span class="php">$num5</span>=0b1010; //cela est integer binaire
+					<br>
+					<span class="fun">var_dump</span>(<span class="php">$num1</span>); //retourne int(42)
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+				
+				<h4>Float</h4>
+			
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<span class="php">$num1</span>=42.42; //cela est réel
+					<br>
+					<span class="php">$num2</span>=42e3; //cela est aussi réel =42000
+					<br>
+					<span class="php">$num3</span>=42E-3; //cela est réel = 0.042
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+				<h4>String</h4>
+			
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<span class="php">$str1</span>=<span class="str">'cela est une chaine de carctères!'</span>; //cela est une chaine de carctèrers
+					<br>
+					<span class="fun">echo</span> <span class="php">$str1</span>;
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+				<h4>Array</h4>
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<span class="php">$fruits</span>=<span class="fun">array</span>(<span class="str">'Orange'</span>,<span class="str">'Bannana'</span>,<span class="str">'Appel'</span>); //cela est un tableau
+					<br>
+					<span class="php">$numbers</span> = [1,2,3,5,TRUE];  //cela est un tableau
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+				<h4>Associative array</h4>
+				<div class="code">
+					<span class="php">&lt;?PHP</span>
+					<br>
+					<span class="php">$person</span>=<span class="fun">array</span>(
+					<br>
+					<span class="str">'firstName'</span> => <span class="str">'Adil'</span>,
+					<br>
+					<span class="str">'lastName'</span> => <span class="str">'Adraibi'</span>,
+					<br>
+					<span class="str">'Age'</span> => 42
+					<br>
+					); 
+					<br>
+					//cela est un tableau associative
+					<br>
+					<span class="php">?&gt;</span>
+				</div>
+			</div>
+			
+		</div>
+	<!--<script src="script.js"></script>-->
+	</body>
+	
+</html>
